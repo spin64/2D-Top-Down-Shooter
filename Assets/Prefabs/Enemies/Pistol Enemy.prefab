@@ -100,6 +100,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 100
+  coin: {fileID: 8831228054122912491, guid: 36259b64f35141342bb0669a8650a030, type: 3}
 --- !u!114 &8790336920736280901
 MonoBehaviour:
   m_ObjectHideFlags: 0
