@@ -1,9 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
-public class playerHealth : MonoBehaviour {
+public class playerHealth : MonoBehaviour
+{
     public int maxHealth = 100;
     int currentHealth;
     public bool invincibility = false;
@@ -24,7 +24,7 @@ public class playerHealth : MonoBehaviour {
         }
         
         if (currentHealth <= 0) {
-            SceneManager.LoadScene("Game Over");
+            Destroy(gameObject);
         }  
     }
 }

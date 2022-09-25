@@ -7,7 +7,6 @@ public class EnemyHealth : MonoBehaviour
 
     public int maxHealth = 100;
     int currentHealth;
-    public GameObject coin;
 
     // Start is called before the first frame update
     void Start() {
@@ -19,7 +18,6 @@ public class EnemyHealth : MonoBehaviour
         currentHealth -= damage;
         
         if (currentHealth <= 0) {
-            Instantiate(coin, transform.position, Quaternion.identity);
             Destroy(gameObject);
         }  
     }
